@@ -1,0 +1,169 @@
+# Mesaj önü
+prefix: "&8[&caOtoMod&8] "
+# Yetki yok
+no-permission: "%prefix%&cBu komutu kullanamazsın."
+# Yenileme başarılı
+reload-success: "%prefix%&aAyarlar yenilendi."
+# Oyuncu yok
+player-not-found: "%prefix%&cOyuncu bulunamadı."
+# Mute bildirimi
+mute-notification: "%prefix%&cSohbet kuralı ihlali nedeniyle &e%duration% &csusturuldun."
+# Kalan süre
+mute-remaining: "%prefix%&cSusturman devam ediyor. Kalan süre: &e%remaining%&c."
+# Unmute başarılı
+unmute-success: "%prefix%&a%player% adlı oyuncunun susturması kaldırıldı."
+# Susturulmamış
+not-muted: "%prefix%&eBu oyuncu susturulmamış."
+# Komut kullanımı
+usage: "%prefix%&eKullanım: /automod panel, history, violations, stats, reload veya unmute."
+# Personel uyarısı
+staff-alert: "%prefix%&e%player% &7%type% ihlali yaptı. Sebep: &c%reason% &7Değer: &c%word%"
+# Discord gönderildi
+discord-sent: "%prefix%&aDiscord bildirimi gönderildi."
+# Discord hata
+discord-error: "%prefix%&cDiscord bildirimi gönderilemedi."
+# Discord buton unmute
+discord-button-unmute: "Susturma kaldırıldı."
+# Discord buton uzat
+discord-button-extend: "Susturma süresi uzatıldı."
+# Discord buton ban
+discord-button-ban: "Ban komutu çalıştırıldı."
+# Discord buton log
+discord-button-review: "Kayıt incelendi olarak işaretlendi."
+# Discord geçersiz işlem
+discord-invalid-action: "Geçersiz işlem."
+# Discord geçersiz oyuncu
+discord-invalid-player: "Geçersiz oyuncu."
+# Discord bilinmeyen işlem
+discord-unknown-action: "Bilinmeyen işlem."
+# Discord buton yetki yok
+discord-no-button-permission: "Bu butonu kullanmak için yetkin yok."
+# Discord işlem yetki yok
+discord-no-action-permission: "Bu işlemi yapmak için yetkin yok."
+# Discord kayıt yok
+discord-action-not-found: "Bu Discord işlemi artık bulunamadı."
+# Discord geçmiş yok
+discord-history-empty: "Bu oyuncu için ihlal geçmişi bulunamadı."
+# Discord süre hatası
+discord-invalid-duration: "Geçersiz süre formatı. Örnek: 10m, 1h, 2d"
+# Discord mute yok
+discord-player-not-muted: "Bu oyuncu artık susturulmuş değil."
+# Discord uzatma başarılı
+discord-extend-success: "Mute süresi başarıyla %duration% uzatıldı."
+# Süre yok
+time-expired: "bitti"
+# Kalıcı süre
+time-permanent: "kalıcı"
+# Sadece oyuncu
+only-player: "%prefix%&cBu komut sadece oyun içinden kullanılabilir."
+# Panel kapalı
+panel-disabled: "%prefix%&cModerasyon paneli kapalı."
+# İstatistik mesajı
+stats-message: "%prefix%&eToplam: &f%total% &7| Susturma: &f%mutes% &7| Küfür: &f%profanity% &7| Spam: &f%spam% &7| Reklam: &f%ads%"
+# Geçmiş başlığı
+history-header: "%prefix%&e%player% için son ihlaller: &f%count%"
+# Geçmiş satırı
+history-line: "&8- &e%type% &7| &c%reason% &7| &f%punishment%"
+# Panel ihlal detayı
+panel-violation-detail: "%prefix%&e%player% &7- &c%type% &7- &f%reason% &7- &f%punishment%"
+# Panel mute detayı
+panel-mute-detail: "%prefix%&e%player% &7kalan: &f%remaining% &7sebep: &f%word%"
+# Panel uzatma
+panel-extend-success: "%prefix%&a%player% için susturma süresi uzatıldı."
+# Panel ban
+panel-ban-success: "%prefix%&c%player% için ban komutu çalıştırıldı."
+panel:
+  back:
+    name: "&cGeri"
+    lore:
+      - "&7Ana menüye dön."
+  previous:
+    name: "&eÖnceki Sayfa"
+    lore:
+      - "&7Önceki kayıtları göster."
+  next:
+    name: "&eSonraki Sayfa"
+    lore:
+      - "&7Sonraki kayıtları göster."
+  main:
+    active-mutes:
+      name: "&eAktif Susturmalar"
+      lore:
+        - "&7Susturulan oyuncuları görüntüle."
+    recent-violations:
+      name: "&eSon İhlaller"
+      lore:
+        - "&7Son moderasyon kayıtlarını görüntüle."
+    stats:
+      name: "&eİstatistikler"
+      lore:
+        - "&7Toplam: &f%total%"
+        - "&7Aktif susturma: &f%mutes%"
+        - "&7Küfür: &f%profanity%"
+        - "&7Spam: &f%spam%"
+        - "&7Reklam: &f%ads%"
+    settings:
+      name: "&eAyarlar"
+      lore:
+        - "&7Koruma sistemlerini aç veya kapat."
+    player-history:
+      name: "&eOyuncu Geçmişi"
+      lore:
+        - "&7Çevrim içi oyuncuların son mesajlarını gör."
+    reload:
+      name: "&aYenile"
+      lore:
+        - "&7Config ve mesajları yeniler."
+  mutes:
+    item:
+      name: "&c%player%"
+      lore:
+        - "&7Seviye: &f%level%"
+        - "&7Kalan: &f%remaining%"
+        - "&7Sebep: &f%word%"
+        - "&eSol tık: Detay"
+        - "&eSağ tık: Susturmayı kaldır"
+        - "&eShift sağ: Süre uzat"
+        - "&eShift sol: Banla"
+  violations:
+    item:
+      name: "&c%type% &7- &e%player%"
+      lore:
+        - "&7Sebep: &f%reason%"
+        - "&7Ceza: &f%punishment%"
+        - "&7Tarih: &f%date%"
+        - "&7Mesaj: &f%message%"
+  history:
+    player:
+      name: "&e%player%"
+      lore:
+        - "&7Mesaj geçmişini görüntüle."
+    item:
+      name: "&e%player%"
+      lore:
+        - "&7Mesaj: &f%message%"
+  settings:
+    spam:
+      name: "&eSpam Koruması"
+      lore:
+        - "&7Durum: &f%state%"
+        - "&eTıkla: Aç/Kapat"
+    advertisement:
+      name: "&eReklam Koruması"
+      lore:
+        - "&7Durum: &f%state%"
+        - "&eTıkla: Aç/Kapat"
+    discord:
+      name: "&eDiscord Logları"
+      lore:
+        - "&7Durum: &f%state%"
+        - "&eTıkla: Aç/Kapat"
+  stats:
+    summary:
+      name: "&eAutoMod İstatistikleri"
+      lore:
+        - "&7Toplam: &f%total%"
+        - "&7Aktif susturma: &f%mutes%"
+        - "&7Küfür: &f%profanity%"
+        - "&7Spam: &f%spam%"
+        - "&7Reklam: &f%ads%"

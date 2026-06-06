@@ -1,0 +1,38 @@
+name: aOtoMod
+version: '${project.version}'
+main: herr0w.aotomod.AOtoMod
+api-version: '1.21'
+load: POSTWORLD
+author: herr0w
+description: Otomatik sohbet moderasyon eklentisi
+commands:
+  automod:
+    description: aOtoMod yönetim komutu
+    usage: /automod <panel|history|violations|stats|reload|unmute>
+    aliases:
+      - aotomod
+permissions:
+  automod.bypass:
+    description: Otomatik cezadan muaf olur
+    default: op
+  automod.reload:
+    description: Ayarları yeniler
+    default: op
+  automod.unmute:
+    description: Mute kaldırır
+    default: op
+  automod.panel:
+    description: Moderasyon panelini açar
+    default: op
+  automod.history:
+    description: Oyuncu ihlal geçmişini görür
+    default: op
+  automod.stats:
+    description: AutoMod istatistiklerini görür
+    default: op
+  automod.spam.bypass:
+    description: Spam korumasını atlar
+    default: op
+  automod.advertisement.bypass:
+    description: Reklam korumasını atlar
+    default: op

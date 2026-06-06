@@ -1,0 +1,343 @@
+# Eklenti durumu
+enabled: true
+
+permissions:
+  # Bypass izni
+  bypass: "automod.bypass"
+  # Yenileme izni
+  reload: "automod.reload"
+  # Unmute izni
+  unmute: "automod.unmute"
+
+filter:
+  # Sembol koruması
+  smart-normalization: true
+  # Leet koruması
+  leet-normalization: true
+  # İzinli kelimeler
+  whitelist:
+    - "ampul"
+    - "kamp"
+    - "robot"
+  # Level 1 kelimeleri
+  level-1:
+    - "salak"
+    - "aptal"
+    - "gerizekali"
+    - "geri zekalı"
+    - "mal"
+    - "malsın"
+    - "ezik"
+    - "ahmak"
+    - "dangalak"
+    - "beyinsiz"
+    - "boş yapma"
+    - "çöp"
+    - "çöpsün"
+    - "noob"
+    - "nub"
+    - "bot"
+    - "beceriksiz"
+    - "yeteneksiz"
+    - "loser"
+    - "velet"
+    - "çocuksun"
+    - "ağlama"
+    - "kudur"
+    - "kudurmuş"
+    - "eziksin"
+    - "komik"
+    - "zavallı"
+    - "boşsun"
+    - "boş herif"
+    - "boş adam"
+  # Level 2 kelimeleri
+  level-2:
+    - "oç"
+    - "oc"
+    - "piç"
+    - "pıç"
+    - "pezevenk"
+    - "yavşak"
+    - "yavsak"
+    - "şerefsiz"
+    - "serefsiz"
+    - "haysiyetsiz"
+    - "karaktersiz"
+    - "adi"
+    - "ibne"
+    - "it"
+    - "köpek"
+    - "şıllık"
+    - "serefsizin teki"
+    - "soysuz"
+    - "namussuz"
+    - "alçak"
+    - "aşağılık"
+    - "aşağılık herif"
+    - "aşağılık insan"
+    - "şerefsizin evladı"
+    - "kansız"
+    - "satılmış"
+    - "rezil"
+    - "utanmaz"
+    - "yüzsüz"
+    - "şeref yoksunu"
+    - "karaktersiz herif"
+    - "pislik"
+    - "mahlukat"
+    - "gerzek"
+    - "şapşal"
+  # Level 3 kelimeleri
+  level-3:
+    - "amk"
+    - "aq"
+    - "a.q"
+    - "amq"
+    - "mk"
+    - "mq"
+    - "sik"
+    - "siktir"
+    - "siktir git"
+    - "siktirgit"
+    - "sikeyim"
+    - "siktiğimin"
+    - "amına"
+    - "amina"
+    - "amını"
+    - "amini"
+    - "amcık"
+    - "amcik"
+    - "yarak"
+    - "yarrak"
+    - "taşşak"
+    - "tassak"
+    - "orospu"
+    - "orospu çocuğu"
+    - "orospu cocugu"
+    - "orospucocuğu"
+    - "orospucocugu"
+    - "göt"
+    - "got"
+    - "götveren"
+    - "gotveren"
+    - "götlek"
+    - "gotlek"
+    - "ananı"
+    - "anani"
+    - "anana"
+    - "bacını"
+    - "bacini"
+    - "bacına"
+    - "sikik"
+    - "amsalak"
+    - "am hoşafı"
+    - "yarrağım"
+    - "yarrağımı ye"
+
+mute:
+  # Level 1 süresi
+  level-1-duration: "10m"
+  # Level 2 süresi
+  level-2-duration: "1h"
+  # Level 3 süresi
+  level-3-duration: "1d"
+  # Temizleme aralığı
+  cleanup-interval-seconds: 60
+
+history:
+  # Saklanacak mesaj
+  size: 5
+
+discord:
+  # Discord sistemi
+  enabled: false
+  # Bot butonları
+  use-bot-buttons: false
+  # Webhook logu
+  webhook-enabled: false
+  # Webhook adresi
+  webhook-url: ""
+  # Embed başlığı
+  embed-title: "🚨 Yeni Moderasyon İşlemi"
+  # Footer yazısı
+  footer-text: "AutoMod Sistemi"
+  # Sunucu adı
+  server-name: "Minecraft Sunucusu"
+  # Bot sistemi
+  bot-enabled: false
+  # Bot tokeni
+  bot-token: ""
+  # Sunucu ID
+  guild-id: ""
+  # Kanal ID
+  channel-id: ""
+  # Yetkili rol IDleri
+  allowed-role-ids:
+    - "ROLE_ID_HERE"
+  # Buton sistemi
+  buttons-enabled: true
+  # Tarih formatı
+  date-format: "dd.MM.yyyy HH:mm:ss"
+  # Tarih formatı
+  timestamp-format: "dd.MM.yyyy HH:mm"
+  # Discord son mesaj
+  recent-message-count: 5
+  buttons:
+    enabled: true
+    unmute:
+      # Buton durumu
+      enabled: true
+      # Buton yazısı
+      label: "Yanlış İşlem / Mute Kaldır"
+      # Buton emojisi
+      emoji: "✅"
+    extend-mute:
+      # Buton durumu
+      enabled: true
+      # Buton yazısı
+      label: "Mute Süresini Uzat"
+      # Buton emojisi
+      emoji: "➕"
+      # Modal kullan
+      use-modal: true
+      # Ek süre
+      duration: "1h"
+      modal:
+        # Modal başlığı
+        title: "Mute Süresini Uzat"
+        # Giriş etiketi
+        input-label: "Ek süre"
+        # Örnek süre
+        placeholder: "Örnek: 10m, 1h, 2d, 7d"
+        # En az karakter
+        min-length: 2
+        # En fazla karakter
+        max-length: 10
+    ban:
+      # Buton durumu
+      enabled: true
+      # Buton yazısı
+      label: "Oyuncuyu Banla"
+      # Buton emojisi
+      emoji: "🔨"
+      # Ban komutu
+      command: "ban %player% AutoMod tarafından yasaklandı"
+    history:
+      # Buton durumu
+      enabled: true
+      # Buton yazısı
+      label: "Geçmişi Göster"
+      # Buton emojisi
+      emoji: "📋"
+    review:
+      # Buton durumu
+      enabled: true
+      # Buton yazısı
+      label: "İncelendi"
+      # Buton emojisi
+      emoji: "🟢"
+  # Ek mute süresi
+  additional-mute-duration: "1h"
+  # Ban komutu
+  ban-command: "ban %player% Otomatik moderasyon"
+
+logging:
+  # Konsol logu
+  console: true
+  # Dosya kaydı
+  file: true
+
+spam:
+  # Spam koruması
+  enabled: true
+  # Bypass izni
+  bypass-permission: "automod.spam.bypass"
+  # En fazla mesaj
+  max-messages: 5
+  # Zaman aralığı
+  time-window-seconds: 3
+  # Aynı mesaj limiti
+  max-same-message-count: 3
+  # Büyük harf oranı
+  max-caps-percent: 70
+  # Büyük harf uzunluğu
+  min-length-for-caps-check: 8
+  # Karakter tekrar limiti
+  max-repeated-character-count: 5
+  # Kelime tekrar limiti
+  max-repeated-word-count: 4
+  # Sembol oranı
+  max-symbol-percent: 60
+  punishment:
+    # Ceza tipi
+    type: "mute"
+    # Ceza süresi
+    duration: "30m"
+
+advertisement:
+  # Reklam koruması
+  enabled: true
+  # Bypass izni
+  bypass-permission: "automod.advertisement.bypass"
+  # IP yakala
+  detect-ips: true
+  # Domain yakala
+  detect-domains: true
+  # Discord daveti yakala
+  detect-discord-invites: true
+  # Gizlenmiş link yakala
+  detect-obfuscated-links: true
+  # İzinli domainler
+  allowed-domains:
+    - "example.com"
+    - "store.example.com"
+  # İzinli davetler
+  allowed-discord-invites:
+    - "officialinvite"
+  # İzinli IPler
+  allowed-ips:
+    - "127.0.0.1"
+  punishment:
+    # Ceza tipi
+    type: "mute"
+    # Ceza süresi
+    duration: "7d"
+
+similarity-detection:
+  # Benzerlik sistemi
+  enabled: true
+  # Eşik değeri
+  threshold: 0.82
+  # Harf tekrarı sıkıştır
+  compress-repeated-letters: true
+  # Sembol temizle
+  remove-symbols-between-letters: true
+  # Levenshtein kullan
+  use-levenshtein: true
+  # Jaro Winkler kullan
+  use-jaro-winkler: false
+  # Normalizasyon haritası
+  normalization-map:
+    "1": "i"
+    "!": "i"
+    "|": "i"
+    "0": "o"
+    "3": "e"
+    "4": "a"
+    "@": "a"
+    "$": "s"
+    "5": "s"
+    "7": "t"
+
+moderation-panel:
+  # Panel durumu
+  enabled: true
+  # Panel izni
+  permission: "automod.panel"
+  # Panel başlığı
+  title: "&8AutoMod Paneli"
+  # Sayfa boyutu
+  page-size: 45
+  # Yenileme süresi
+  refresh-seconds: 10

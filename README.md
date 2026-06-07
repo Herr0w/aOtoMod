@@ -20,7 +20,6 @@ aOtoMod, Paper 1.21.4 sunucuları için geliştirilmiş gelişmiş bir otomatik 
 
 ## Algılanabilen Örnekler
 
-text
 a.m.k
 a m k
 a-m-k
@@ -51,7 +50,7 @@ Discord bot aktifse loglara şu butonlar eklenir:
 
 Mute Süresini Uzat butonu Discord modal açar. Yetkili özel süre girebilir:
 
-text
+
 30s, 10m, 1h, 2d, 1w
 
 
@@ -74,7 +73,6 @@ Panel ile:
 
 ## Komutlar
 
-text
 /automod reload
 /automod unmute <oyuncu>
 /automod panel
@@ -85,7 +83,6 @@ text
 
 ## İzinler
 
-text
 automod.bypass
 automod.reload
 automod.unmute
@@ -106,7 +103,6 @@ automod.advertisement.bypass
 
 ## Dosyalar
 
-text
 config.yml              Tüm ayarlar
 messages.yml            Tüm mesajlar
 data.yml                Aktif mute verileri
